@@ -33,6 +33,9 @@ padding: 2rem;
 }
 
 footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
     text-align: center;
     padding: 1rem 0;
     background: #333;
