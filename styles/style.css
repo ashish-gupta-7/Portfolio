@@ -1,32 +1,132 @@
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
-    padding: 0;
-    line-height: 1.6;
+    background-color: #121212;
+    color: white;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
+/* Navbar Styles */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 15px 20px;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff2e63;
+}
+
+/* Theme Toggle Button in Navbar */
+#theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#theme-toggle img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+}
+
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+.hero-content {
+    max-width: 600px;
 }
 
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+
+.hero span {
+    color: #ffcc00;
 }
+
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+
+/* Pre Tag Styling - No Scroll */
+.code-box {
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+    text-align: left;
+    width: 100%;
+    white-space: pre-wrap;  /* Allows text to wrap inside the box */
+    word-wrap: break-word;   /* Breaks long words to prevent overflow */
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+}
+
+.code-box code {
+    color: #00ffcc;
+}
+
 
 main {
 padding: 2rem;
