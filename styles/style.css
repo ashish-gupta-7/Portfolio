@@ -128,9 +128,146 @@ body {
 }
 
 
-main {
-padding: 2rem;
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ff2e63;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
 }
+
+.btn:hover {
+    background: #ffcc00;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide-in Animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply Animations */
+.hero h1, .hero p {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.code-box {
+    animation: slideIn 1.5s ease-in-out;
+}
+
+/* Hero Section - Center Everything */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Pre Tag Box - Perfect Alignment */
+.code-box {
+    display: inline-block;
+    text-align: left;
+    max-width: 600px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Button Hover Effect */
+.btn {
+    transition: transform 0.2s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Dark Theme */
+body {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Highlight Name */
+.hero span {
+    color: #ffcc00;
+    font-weight: 600;
+}
+
+/* Code Block Color */
+.code-box {
+    background-color: #1e1e1e;
+    color: #ffcc00;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+/* About Me Section */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.about-container {
+    max-width: 700px;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ff2e63;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #ffcc00;
+}
+
 
 footer {
     position: fixed;
